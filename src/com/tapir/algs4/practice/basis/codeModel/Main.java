@@ -139,6 +139,18 @@ public class Main {
     return result;
   }
 
+  // 1.1.20
+  static int factorial(int N) {
+    if (N == 0 || N == 1) {
+      return 1;
+    }
+    return N * factorial(N - 1);
+  }
+
+  static double factorialLn(int N) {
+    return Math.log(factorial(N));
+  }
+
   public static void main(String[] args) {
     int[] temp = new int[10];
     for (int i = 0; i < 10; i++) {
